@@ -17,11 +17,6 @@ body, html{
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
-
-  /*
-    fixed = parallax
-    scroll = normal
-  */
   background-attachment:fixed;
 }
 
@@ -72,37 +67,6 @@ body, html{
 
 .row {
   width: 100%;
-}
-
-
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3, .pimg4{
-    background-attachment:scroll;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-  .pimg1, .pimg2, .pimg3, .pimg4{
-    background-attachment:scroll;
-  }
-
-  .skillsLogo {
-    width: 10%;
-    height: 10%;
-  }
-
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  .pimg1, .pimg2, .pimg3, .pimg4{
-    background-attachment:scroll;
-  }
-
-  .skillsLogo {
-    width: 10%;
-    height: 10%;
-  }
-
 }
 
 
@@ -651,6 +615,131 @@ stylize any heading tags withing white-panel below
 
 article {
   margin-top: 6%;"
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    background-attachment:scroll;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    background-attachment:scroll;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  article > img {
+    width: 0px;
+    visibility: hidden;
+  }
+
+  .about {
+    margin-top: 41%;
+  }
+
+  .pBio {
+    font-size: 14px;
+  }
+
+  .pimg1{
+  background-image:url('../images/aboutMe.png');
+  min-height:100%;
+  }
+
+  .pimg2 {
+    background-image:url('../images/main-bg.jpg');
+    min-height:100%;
+  }
+  .contactMe {
+    margin-left: 4%;
+  }
+
+  .owl-carousel {
+    height: 100%;
+  }
+
+  .slide {
+    height: 100%;
+  }
+
+  .slide > img {
+    height: 40%;
+  }
+
+
+  .slide-content {
+  top: 60%;
+  width: 70%;
+  padding: 0px 0px 0;
+  }
+  .slide-content, 
+  .slide-content h3,
+  .slide-content h2,
+  .slide-content p,
+  .slide-content h3:before,
+  .slide-content h3:after {
+    transition: all 2s ease;
+  }
+  .slide-content h3 {
+    font-size: 14px;
+  }
+
+  .slide-content h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .slide-content p {
+    line-height: 1em;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+
+  .slide-content li {
+    font-size: 12px;
+  }
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    background-attachment:scroll;
+  }
+
+}
+
+@media only screen and (min-width : 777px) {
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+  position:relative;
+  /*opacity:0.90;*/
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+  .pimg1{
+  background-image:url('../images/main-bg.jpg');
+  }
+
+  .pimg2 {
+    background-image:url('../images/aboutMe3.jpg');
+  }
+
 }
 
 
