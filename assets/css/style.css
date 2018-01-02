@@ -38,7 +38,7 @@ body, html{
 
 .pimg3{
 /*  background-image:url('../images/expbg.jpg');*/
-  background-image:url('../images/blur-bg.jpg');
+  background-image:url('../images/blur.png');
   min-height:100%;
 }
 
@@ -48,7 +48,7 @@ body, html{
 }
 
 .pimg5{
-  background-image:url('../images/blur-bg.jpg');
+  background-image:url('../images/blur.png');
   min-height:100%;
 }
 
@@ -173,7 +173,7 @@ body, html{
 ********************/
 
 .second-bg { 
-    background-image: url(../images/blur-bg.jpg);
+    background-image: url(../images/blur.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
