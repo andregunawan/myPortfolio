@@ -555,14 +555,9 @@ label {
    top:-50px;
 } 
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: orange;
-    background-color: transparent;
-}
-
-.active {
-    color: orange;
-    background-color: transparent;
+     background-color: transparent !important; 
 }
 
 .flex-container {
@@ -666,7 +661,7 @@ article {
     margin-left: 4%;
   }
 
-  .owl-carousel {
+  #owlCarousel { 
     height: 100%;
   }
 
@@ -675,6 +670,7 @@ article {
   }
 
   .slide > img {
+    padding-top: 10%;
     height: 40%;
   }
 
@@ -684,14 +680,7 @@ article {
   width: 70%;
   padding: 0px 0px 0;
   }
-  .slide-content, 
-  .slide-content h3,
-  .slide-content h2,
-  .slide-content p,
-  .slide-content h3:before,
-  .slide-content h3:after {
-    transition: all 2s ease;
-  }
+
   .slide-content h3 {
     font-size: 14px;
   }
@@ -709,6 +698,11 @@ article {
 
   .slide-content li {
     font-size: 12px;
+  }
+
+  .dropdown-menu {
+    background: rgba(242, 242, 242, 0.6);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   }
 
 }
